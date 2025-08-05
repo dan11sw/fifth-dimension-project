@@ -1,0 +1,132 @@
+:root {
+  --dark-brown-1: #181511;
+  --dark-brown-2: #3B2F23;
+  --middle-coffee: #B19472;
+  --light-coffee: #E6D5B7;
+  --white: #FEFEF9;
+  --mirror: rgba(230, 213, 183, 0.25);
+
+  --cards-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+  --ff: TNR;  
+
+  --fs-b: 16px;
+  --fs-h1: 24px;
+
+}
+
+@font-face {
+  font-family: "TNR";
+  src: url("./resources/TNR.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  color: var(--dark-brown-1);
+  background-color: var(--white);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-family: "TNR";
+  font-style: bold;
+}
+
+h2{
+  font-size: var(--fs-b);
+  font-family: "TNR";
+  font-weight: 100;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 100px;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #000;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+
+/*# sourceMappingURL=main.css.map */
+
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* */
+  .container{
+    background-color: red;
+  }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* */
+}
+/*==========  Mobile First  ========== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* */
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* */
+}
+
+/*# sourceMappingURL=adaptive.css.map */
